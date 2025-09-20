@@ -22,8 +22,8 @@ public class BankAccountMenu {
                     double addAmount = sc.nextDouble();
                     if (addAmount > 0){
                         balance += addAmount;
-                        System.out.printf("Added %.2f%n ", addAmount);
-                        System.out.printf("New balance %.2f%n ", balance);
+                        System.out.printf("Added $%.2f%n ", addAmount);
+                        System.out.printf("New balance $%.2f%n ", balance);
                     }
                     else {
                         System.out.println("Error: value entered must be positive.");
@@ -37,8 +37,8 @@ public class BankAccountMenu {
                     {
                         if (amountWithdraw <= balance){
                             balance -= amountWithdraw;
-                            System.out.printf("Withdrew %.2f%n ", amountWithdraw);
-                            System.out.printf("New balance %.2f%n ", balance);
+                            System.out.printf("Withdrew $%.2f%n ", amountWithdraw);
+                            System.out.printf("New balance $%.2f%n ", balance);
                         }
                         else {
                             System.out.println("Error: Insufficient funds");
@@ -50,7 +50,7 @@ public class BankAccountMenu {
                     break;
 
                 case 3:
-                    System.out.printf("Your balance is %.2f%n ", balance);
+                    System.out.printf("Your balance is $%.2f%n ", balance);
                     break;
 
                 case 4:
